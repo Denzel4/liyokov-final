@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project.server.helpers package &#8212; LIYO-DOC 1.0.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="project-server-helpers-package">
+<h1>project.server.helpers package<a class="headerlink" href="#project-server-helpers-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-project.server.helpers.array">
+<span id="project-server-helpers-array-module"></span><h2>project.server.helpers.array module<a class="headerlink" href="#module-project.server.helpers.array" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="project.server.helpers.array.join_or_none">
+<code class="sig-prename descclassname">project.server.helpers.array.</code><code class="sig-name descname">join_or_none</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em>, <em class="sig-param"><span class="n">delimiter</span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.server.helpers.array.join_or_none" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="project.server.helpers.array.split_or_none">
+<code class="sig-prename descclassname">project.server.helpers.array.</code><code class="sig-name descname">split_or_none</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em>, <em class="sig-param"><span class="n">delimiter</span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.server.helpers.array.split_or_none" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-project.server.helpers.auth">
+<span id="project-server-helpers-auth-module"></span><h2>project.server.helpers.auth module<a class="headerlink" href="#module-project.server.helpers.auth" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="project.server.helpers.auth.check_blacklist">
+<code class="sig-prename descclassname">project.server.helpers.auth.</code><code class="sig-name descname">check_blacklist</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">auth_token</span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.server.helpers.auth.check_blacklist" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="project.server.helpers.auth.generate_confirmation_token">
+<code class="sig-prename descclassname">project.server.helpers.auth.</code><code class="sig-name descname">generate_confirmation_token</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">app</span></em>, <em class="sig-param"><span class="n">email</span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.server.helpers.auth.generate_confirmation_token" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="project.server.helpers.auth.get_auth_token">
+<code class="sig-prename descclassname">project.server.helpers.auth.</code><code class="sig-name descname">get_auth_token</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.server.helpers.auth.get_auth_token" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="project.server.helpers.auth.send_activation_account">
+<code class="sig-prename descclassname">project.server.helpers.auth.</code><code class="sig-name descname">send_activation_account</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">user</span></em>, <em class="sig-param"><span class="n">email</span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.server.helpers.auth.send_activation_account" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="project.server.helpers.auth.send_confirmation_email">
+<code class="sig-prename descclassname">project.server.helpers.auth.</code><code class="sig-name descname">send_confirmation_email</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">app</span></em>, <em class="sig-param"><span class="n">email</span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.server.helpers.auth.send_confirmation_email" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="project.server.helpers.auth.send_new_user_email">
+<code class="sig-prename descclassname">project.server.helpers.auth.</code><code class="sig-name descname">send_new_user_email</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">user</span></em>, <em class="sig-param"><span class="n">email</span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.server.helpers.auth.send_new_user_email" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="project.server.helpers.auth.send_reset_email">
+<code class="sig-prename descclassname">project.server.helpers.auth.</code><code class="sig-name descname">send_reset_email</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">app</span></em>, <em class="sig-param"><span class="n">email</span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.server.helpers.auth.send_reset_email" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-project.server.helpers.bucket">
+<span id="project-server-helpers-bucket-module"></span><h2>project.server.helpers.bucket module<a class="headerlink" href="#module-project.server.helpers.bucket" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="project.server.helpers.bucket.download_file">
+<code class="sig-prename descclassname">project.server.helpers.bucket.</code><code class="sig-name descname">download_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">image_id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.server.helpers.bucket.download_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-project.server.helpers.database">
+<span id="project-server-helpers-database-module"></span><h2>project.server.helpers.database module<a class="headerlink" href="#module-project.server.helpers.database" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="project.server.helpers.database.full_text_search">
+<code class="sig-prename descclassname">project.server.helpers.database.</code><code class="sig-name descname">full_text_search</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">query</span></em>, <em class="sig-param"><span class="n">q</span></em>, <em class="sig-param"><span class="n">columns</span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.server.helpers.database.full_text_search" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="project.server.helpers.database.get_list">
+<code class="sig-prename descclassname">project.server.helpers.database.</code><code class="sig-name descname">get_list</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">query</span></em>, <em class="sig-param"><span class="n">pagination</span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.server.helpers.database.get_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="project.server.helpers.database.get_order_by">
+<code class="sig-prename descclassname">project.server.helpers.database.</code><code class="sig-name descname">get_order_by</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model</span></em>, <em class="sig-param"><span class="n">columns</span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.server.helpers.database.get_order_by" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-project.server.helpers.date">
+<span id="project-server-helpers-date-module"></span><h2>project.server.helpers.date module<a class="headerlink" href="#module-project.server.helpers.date" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="project.server.helpers.date.from_iso8601">
+<code class="sig-prename descclassname">project.server.helpers.date.</code><code class="sig-name descname">from_iso8601</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">date</span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.server.helpers.date.from_iso8601" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="project.server.helpers.date.is_last_day_of_month">
+<code class="sig-prename descclassname">project.server.helpers.date.</code><code class="sig-name descname">is_last_day_of_month</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">date</span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.server.helpers.date.is_last_day_of_month" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="project.server.helpers.date.to_iso8601">
+<code class="sig-prename descclassname">project.server.helpers.date.</code><code class="sig-name descname">to_iso8601</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">date</span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.server.helpers.date.to_iso8601" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-project.server.helpers.encrypter">
+<span id="project-server-helpers-encrypter-module"></span><h2>project.server.helpers.encrypter module<a class="headerlink" href="#module-project.server.helpers.encrypter" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="project.server.helpers.encrypter.encrypt_password">
+<code class="sig-prename descclassname">project.server.helpers.encrypter.</code><code class="sig-name descname">encrypt_password</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">password</span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.server.helpers.encrypter.encrypt_password" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-project.server.helpers.filesystem">
+<span id="project-server-helpers-filesystem-module"></span><h2>project.server.helpers.filesystem module<a class="headerlink" href="#module-project.server.helpers.filesystem" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="project.server.helpers.filesystem.FS">
+<em class="property">class </em><code class="sig-prename descclassname">project.server.helpers.filesystem.</code><code class="sig-name descname">FS</code><a class="headerlink" href="#project.server.helpers.filesystem.FS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="project.server.helpers.filesystem.FS.annotation">
+<code class="sig-name descname">annotation</code><em class="property"> = 'C:\\Users\\DENZEL INDUSTRIES\\Desktop\\g\\annotation'</em><a class="headerlink" href="#project.server.helpers.filesystem.FS.annotation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="project.server.helpers.filesystem.FS.config">
+<code class="sig-name descname">config</code><em class="property"> = &lt;configparser.ConfigParser object&gt;</em><a class="headerlink" href="#project.server.helpers.filesystem.FS.config" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="project.server.helpers.filesystem.FS.dataset">
+<code class="sig-name descname">dataset</code><em class="property"> = 'C:\\Users\\DENZEL INDUSTRIES\\Desktop\\g\\dataset'</em><a class="headerlink" href="#project.server.helpers.filesystem.FS.dataset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="project.server.helpers.filesystem.FS.logs">
+<code class="sig-name descname">logs</code><em class="property"> = 'C:\\Users\\DENZEL INDUSTRIES\\Desktop\\g\\logs'</em><a class="headerlink" href="#project.server.helpers.filesystem.FS.logs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="project.server.helpers.filesystem.FS.model">
+<code class="sig-name descname">model</code><em class="property"> = 'C:\\Users\\DENZEL INDUSTRIES\\Desktop\\g\\model'</em><a class="headerlink" href="#project.server.helpers.filesystem.FS.model" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="project.server.helpers.filesystem.create_directory">
+<code class="sig-prename descclassname">project.server.helpers.filesystem.</code><code class="sig-name descname">create_directory</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.server.helpers.filesystem.create_directory" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="project.server.helpers.filesystem.create_multiple_directories">
+<code class="sig-prename descclassname">project.server.helpers.filesystem.</code><code class="sig-name descname">create_multiple_directories</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">paths</span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.server.helpers.filesystem.create_multiple_directories" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-project.server.helpers.generic_errors">
+<span id="project-server-helpers-generic-errors-module"></span><h2>project.server.helpers.generic_errors module<a class="headerlink" href="#module-project.server.helpers.generic_errors" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="project.server.helpers.generic_errors.bad_request">
+<code class="sig-prename descclassname">project.server.helpers.generic_errors.</code><code class="sig-name descname">bad_request</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">message</span><span class="o">=</span><span class="default_value">'The browser (or proxy) sent a request that this server could not understand.'</span></em>, <em class="sig-param"><span class="n">exc</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.server.helpers.generic_errors.bad_request" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="project.server.helpers.generic_errors.forbidden">
+<code class="sig-prename descclassname">project.server.helpers.generic_errors.</code><code class="sig-name descname">forbidden</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">message</span><span class="o">=</span><span class="default_value">&quot;You don't have the permission to access the requested resource. It is either read-protected or not readable by the server.&quot;</span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.server.helpers.generic_errors.forbidden" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="project.server.helpers.generic_errors.not_found">
+<code class="sig-prename descclassname">project.server.helpers.generic_errors.</code><code class="sig-name descname">not_found</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">message</span><span class="o">=</span><span class="default_value">'The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.server.helpers.generic_errors.not_found" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="project.server.helpers.generic_errors.not_implemented">
+<code class="sig-prename descclassname">project.server.helpers.generic_errors.</code><code class="sig-name descname">not_implemented</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">message</span><span class="o">=</span><span class="default_value">'The server does not support the action requested by the browser.'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.server.helpers.generic_errors.not_implemented" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="project.server.helpers.generic_errors.server_error">
+<code class="sig-prename descclassname">project.server.helpers.generic_errors.</code><code class="sig-name descname">server_error</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">message</span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.server.helpers.generic_errors.server_error" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="project.server.helpers.generic_errors.unauthorized">
+<code class="sig-prename descclassname">project.server.helpers.generic_errors.</code><code class="sig-name descname">unauthorized</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">error</span><span class="o">=</span><span class="default_value">'Unauthorized'</span></em>, <em class="sig-param"><span class="n">message</span><span class="o">=</span><span class="default_value">&quot;The server could not verify that you are authorized to access the URL requested. You either supplied the wrong credentials (e.g. a bad password), or your browser doesn't understand how to supply the credentials required.&quot;</span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.server.helpers.generic_errors.unauthorized" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-project.server.helpers.mail">
+<span id="project-server-helpers-mail-module"></span><h2>project.server.helpers.mail module<a class="headerlink" href="#module-project.server.helpers.mail" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="project.server.helpers.mail.send_email">
+<code class="sig-prename descclassname">project.server.helpers.mail.</code><code class="sig-name descname">send_email</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">to</span></em>, <em class="sig-param"><span class="n">subject</span></em>, <em class="sig-param"><span class="n">template</span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.server.helpers.mail.send_email" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-project.server.helpers.marshaller">
+<span id="project-server-helpers-marshaller-module"></span><h2>project.server.helpers.marshaller module<a class="headerlink" href="#module-project.server.helpers.marshaller" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="project.server.helpers.marshaller.marshal">
+<code class="sig-prename descclassname">project.server.helpers.marshaller.</code><code class="sig-name descname">marshal</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em>, <em class="sig-param"><span class="n">fields</span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.server.helpers.marshaller.marshal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-project.server.helpers.serialize">
+<span id="project-server-helpers-serialize-module"></span><h2>project.server.helpers.serialize module<a class="headerlink" href="#module-project.server.helpers.serialize" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="project.server.helpers.serialize.get_json_clean_response">
+<code class="sig-prename descclassname">project.server.helpers.serialize.</code><code class="sig-name descname">get_json_clean_response</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">return_value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.server.helpers.serialize.get_json_clean_response" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-project.server.helpers">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-project.server.helpers" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">LIYO-DOC</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, LIYOKOV.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/project.server.helpers.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

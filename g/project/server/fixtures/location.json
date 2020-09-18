@@ -1,0 +1,19 @@
+[
+  {
+    "table": "auth_locations",
+    "records": [
+      {
+        "id": 1,
+        "location": "Canada"
+      },
+      {
+        "id": 2,
+        "location": "United States"
+      },
+      {
+        "id": 3,
+        "location": "Japan"
+      }
+    ]
+  }
+]

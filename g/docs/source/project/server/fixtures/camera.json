@@ -1,0 +1,72 @@
+[
+  {
+    "table": "sys_camera",
+    "records": [
+      {
+        "id": 1,
+        "camera_id": "CAM1",
+        "updated_on":"2020-01-01 00:00:00",
+        "camera_type": "This is a test"
+      },
+      {
+        "id": 2,
+        "camera_id": "CAM2",
+        "updated_on":"2020-01-01 00:00:00",
+        "camera_type": "This is a test"
+      },
+      {
+        "id": 3,
+        "camera_id": "CAM3",
+        "updated_on":"2020-01-01 00:00:00",
+        "camera_type": "This is a test"
+      },
+      {
+        "id": 4,
+        "camera_id": "CAM4",
+        "updated_on":"2020-01-01 00:00:00",
+        "camera_type": "This is a test"
+      },
+      {
+        "id": 5,
+        "camera_id": "CAM5",
+        "updated_on":"2020-01-01 00:00:00",
+        "camera_type": "This is a test"
+      },
+      {
+        "id": 6,
+        "camera_id": "CAM6",
+        "updated_on":"2020-01-01 00:00:00",
+        "camera_type": "This is a test"
+      }
+    ]
+  },
+  {
+    "table": "ai_inference",
+    "records": [
+      {
+        "id": 1,
+        "updated_on":"2020-01-01 00:00:00",
+        "file_name": "Image1",
+        "file_path": "/home/ubuntu/Image1",
+        "tag": "GOOD",
+        "model_id": 1,
+        "camera_id": 1,
+        "dataset": "semi-conductor",
+        "confidence": 1,
+        "label": "GOOD"
+      },
+      {
+        "id": 2,
+        "updated_on":"2020-01-01 00:00:00",
+        "file_name": "Image1",
+        "file_path": "/home/ubuntu/Image1",
+        "tag": "GOOD",
+        "model_id": 2,
+        "camera_id": 2,
+        "dataset": "semi-conductor",
+        "confidence": 1,
+        "label": "GOOD"
+      }
+    ]
+  }
+]

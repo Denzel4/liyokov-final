@@ -1,0 +1,29 @@
+[
+  {
+    "table": "ai_annotation",
+    "records": [
+      {
+        "id": 1,
+        "updated_on": "2020-01-01 00:00:00",
+        "image_id": 1,
+        "category_id": 1,
+        "segmentation":"Scratch",
+        "bbox": "1",
+        "ignore": 1,
+        "iscrowd": 1,
+        "area": 1
+      },
+      {
+        "id": 2,
+        "updated_on": "2020-01-01 00:00:00",
+        "image_id": 1,
+        "category_id": 1,
+        "segmentation":"Scratch",
+        "bbox": "1",
+        "ignore": 1,
+        "iscrowd": 1,
+        "area": 1
+      }
+    ]
+  }
+]

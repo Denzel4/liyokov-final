@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project.server.config package &#8212; LIYO-DOC 1.0.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="project-server-config-package">
+<h1>project.server.config package<a class="headerlink" href="#project-server-config-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-project.server.config.config">
+<span id="project-server-config-config-module"></span><h2>project.server.config.config module<a class="headerlink" href="#module-project.server.config.config" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="project.server.config.config.BaseConfig">
+<em class="property">class </em><code class="sig-prename descclassname">project.server.config.config.</code><code class="sig-name descname">BaseConfig</code><a class="headerlink" href="#project.server.config.config.BaseConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Base configuration.</p>
+<dl class="py attribute">
+<dt id="project.server.config.config.BaseConfig.API_AWS_ACCESS_KEY_ID">
+<code class="sig-name descname">API_AWS_ACCESS_KEY_ID</code><em class="property"> = None</em><a class="headerlink" href="#project.server.config.config.BaseConfig.API_AWS_ACCESS_KEY_ID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="project.server.config.config.BaseConfig.API_AWS_SECRET_ACCESS_KEY">
+<code class="sig-name descname">API_AWS_SECRET_ACCESS_KEY</code><em class="property"> = None</em><a class="headerlink" href="#project.server.config.config.BaseConfig.API_AWS_SECRET_ACCESS_KEY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="project.server.config.config.BaseConfig.API_NAME">
+<code class="sig-name descname">API_NAME</code><em class="property"> = 'Macula'</em><a class="headerlink" href="#project.server.config.config.BaseConfig.API_NAME" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="project.server.config.config.BaseConfig.BCRYPT_LOG_ROUNDS">
+<code class="sig-name descname">BCRYPT_LOG_ROUNDS</code><em class="property"> = 13</em><a class="headerlink" href="#project.server.config.config.BaseConfig.BCRYPT_LOG_ROUNDS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="project.server.config.config.BaseConfig.DEBUG">
+<code class="sig-name descname">DEBUG</code><em class="property"> = False</em><a class="headerlink" href="#project.server.config.config.BaseConfig.DEBUG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="project.server.config.config.BaseConfig.FIXTURES_DIRS">
+<code class="sig-name descname">FIXTURES_DIRS</code><em class="property"> = './project/server/fixtures/'</em><a class="headerlink" href="#project.server.config.config.BaseConfig.FIXTURES_DIRS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="project.server.config.config.BaseConfig.JWT_ACCESS_TOKEN_EXPIRES">
+<code class="sig-name descname">JWT_ACCESS_TOKEN_EXPIRES</code><em class="property"> = datetime.timedelta(seconds=3600)</em><a class="headerlink" href="#project.server.config.config.BaseConfig.JWT_ACCESS_TOKEN_EXPIRES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="project.server.config.config.BaseConfig.JWT_IDENTITY_CLAIM">
+<code class="sig-name descname">JWT_IDENTITY_CLAIM</code><em class="property"> = 'sub'</em><a class="headerlink" href="#project.server.config.config.BaseConfig.JWT_IDENTITY_CLAIM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="project.server.config.config.BaseConfig.JWT_SECRET_KEY">
+<code class="sig-name descname">JWT_SECRET_KEY</code><em class="property"> = 'ß-vm&quot;\xadv-¨ÿÇáÃ\x05Eã\x14\x8f;\x06»¿®.'</em><a class="headerlink" href="#project.server.config.config.BaseConfig.JWT_SECRET_KEY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="project.server.config.config.BaseConfig.LOGGING">
+<code class="sig-name descname">LOGGING</code><em class="property"> = {'formatters': {'default': {'format': '%(asctime)s - %(name)s - %(levelname)s - %(message)s'}}, 'handlers': {'console': {'class': 'logging.StreamHandler', 'formatter': 'default', 'level': 'INFO', 'stream': 'ext://sys.stdout'}, 'file': {'class': 'logging.FileHandler', 'filename': './project/server/logs/application.log', 'formatter': 'default', 'level': 'INFO'}}, 'loggers': {'MACULA': {'handlers': ['file'], 'level': 'ERROR', 'propagate': True, 'qualname': 'macula.error'}}, 'root': {'handlers': ['console', 'file'], 'level': 'DEBUG'}, 'version': 1}</em><a class="headerlink" href="#project.server.config.config.BaseConfig.LOGGING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="project.server.config.config.BaseConfig.MAIL_PASSWORD">
+<code class="sig-name descname">MAIL_PASSWORD</code><em class="property"> = None</em><a class="headerlink" href="#project.server.config.config.BaseConfig.MAIL_PASSWORD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="project.server.config.config.BaseConfig.MAIL_USERNAME">
+<code class="sig-name descname">MAIL_USERNAME</code><em class="property"> = None</em><a class="headerlink" href="#project.server.config.config.BaseConfig.MAIL_USERNAME" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="project.server.config.config.BaseConfig.PATH_DIR">
+<code class="sig-name descname">PATH_DIR</code><em class="property"> = 'paths.conf'</em><a class="headerlink" href="#project.server.config.config.BaseConfig.PATH_DIR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="project.server.config.config.BaseConfig.SECRET_KEY">
+<code class="sig-name descname">SECRET_KEY</code><em class="property"> = 'ß-vm&quot;\xadv-¨ÿÇáÃ\x05Eã\x14\x8f;\x06»¿®.'</em><a class="headerlink" href="#project.server.config.config.BaseConfig.SECRET_KEY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="project.server.config.config.BaseConfig.SECURITY_PASSWORD_SALT">
+<code class="sig-name descname">SECURITY_PASSWORD_SALT</code><em class="property"> = 'ß-vm&quot;\xadv-¨ÿÇáÃ\x05Eã\x14\x8f;\x06»¿®.'</em><a class="headerlink" href="#project.server.config.config.BaseConfig.SECURITY_PASSWORD_SALT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="project.server.config.config.BaseConfig.SQLALCHEMY_TRACK_MODIFICATIONS">
+<code class="sig-name descname">SQLALCHEMY_TRACK_MODIFICATIONS</code><em class="property"> = False</em><a class="headerlink" href="#project.server.config.config.BaseConfig.SQLALCHEMY_TRACK_MODIFICATIONS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="project.server.config.config.DevelopmentConfig">
+<em class="property">class </em><code class="sig-prename descclassname">project.server.config.config.</code><code class="sig-name descname">DevelopmentConfig</code><a class="headerlink" href="#project.server.config.config.DevelopmentConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#project.server.config.config.BaseConfig" title="project.server.config.config.BaseConfig"><code class="xref py py-class docutils literal notranslate"><span class="pre">project.server.config.config.BaseConfig</span></code></a></p>
+<p>Development configuration.</p>
+<dl class="py attribute">
+<dt id="project.server.config.config.DevelopmentConfig.BCRYPT_LOG_ROUNDS">
+<code class="sig-name descname">BCRYPT_LOG_ROUNDS</code><em class="property"> = 4</em><a class="headerlink" href="#project.server.config.config.DevelopmentConfig.BCRYPT_LOG_ROUNDS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="project.server.config.config.DevelopmentConfig.DEBUG">
+<code class="sig-name descname">DEBUG</code><em class="property"> = True</em><a class="headerlink" href="#project.server.config.config.DevelopmentConfig.DEBUG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="project.server.config.config.DevelopmentConfig.MAIL_DEFAULT_SENDER">
+<code class="sig-name descname">MAIL_DEFAULT_SENDER</code><em class="property"> = 'macula&#64;creationauts.com'</em><a class="headerlink" href="#project.server.config.config.DevelopmentConfig.MAIL_DEFAULT_SENDER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="project.server.config.config.DevelopmentConfig.MAIL_PORT">
+<code class="sig-name descname">MAIL_PORT</code><em class="property"> = 465</em><a class="headerlink" href="#project.server.config.config.DevelopmentConfig.MAIL_PORT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="project.server.config.config.DevelopmentConfig.MAIL_SERVER">
+<code class="sig-name descname">MAIL_SERVER</code><em class="property"> = 'smtp.googlemail.com'</em><a class="headerlink" href="#project.server.config.config.DevelopmentConfig.MAIL_SERVER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="project.server.config.config.DevelopmentConfig.MAIL_USE_SSL">
+<code class="sig-name descname">MAIL_USE_SSL</code><em class="property"> = True</em><a class="headerlink" href="#project.server.config.config.DevelopmentConfig.MAIL_USE_SSL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="project.server.config.config.DevelopmentConfig.MAIL_USE_TLS">
+<code class="sig-name descname">MAIL_USE_TLS</code><em class="property"> = False</em><a class="headerlink" href="#project.server.config.config.DevelopmentConfig.MAIL_USE_TLS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="project.server.config.config.DevelopmentConfig.SQLALCHEMY_DATABASE_URI">
+<code class="sig-name descname">SQLALCHEMY_DATABASE_URI</code><em class="property"> = 'mysql+pymysql://macula:macula&#64;localhost/macula'</em><a class="headerlink" href="#project.server.config.config.DevelopmentConfig.SQLALCHEMY_DATABASE_URI" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="project.server.config.config.DevelopmentConfig.UI_URL">
+<code class="sig-name descname">UI_URL</code><em class="property"> = 'http://macula.com/'</em><a class="headerlink" href="#project.server.config.config.DevelopmentConfig.UI_URL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="project.server.config.config.ProductionConfig">
+<em class="property">class </em><code class="sig-prename descclassname">project.server.config.config.</code><code class="sig-name descname">ProductionConfig</code><a class="headerlink" href="#project.server.config.config.ProductionConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#project.server.config.config.BaseConfig" title="project.server.config.config.BaseConfig"><code class="xref py py-class docutils literal notranslate"><span class="pre">project.server.config.config.BaseConfig</span></code></a></p>
+<p>Production configuration.</p>
+<dl class="py attribute">
+<dt id="project.server.config.config.ProductionConfig.DEBUG">
+<code class="sig-name descname">DEBUG</code><em class="property"> = False</em><a class="headerlink" href="#project.server.config.config.ProductionConfig.DEBUG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="project.server.config.config.ProductionConfig.SQLALCHEMY_DATABASE_URI">
+<code class="sig-name descname">SQLALCHEMY_DATABASE_URI</code><em class="property"> = 'mysql:///example'</em><a class="headerlink" href="#project.server.config.config.ProductionConfig.SQLALCHEMY_DATABASE_URI" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="project.server.config.config.TestingConfig">
+<em class="property">class </em><code class="sig-prename descclassname">project.server.config.config.</code><code class="sig-name descname">TestingConfig</code><a class="headerlink" href="#project.server.config.config.TestingConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#project.server.config.config.BaseConfig" title="project.server.config.config.BaseConfig"><code class="xref py py-class docutils literal notranslate"><span class="pre">project.server.config.config.BaseConfig</span></code></a></p>
+<p>Testing configuration.</p>
+<dl class="py attribute">
+<dt id="project.server.config.config.TestingConfig.BCRYPT_LOG_ROUNDS">
+<code class="sig-name descname">BCRYPT_LOG_ROUNDS</code><em class="property"> = 4</em><a class="headerlink" href="#project.server.config.config.TestingConfig.BCRYPT_LOG_ROUNDS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="project.server.config.config.TestingConfig.DEBUG">
+<code class="sig-name descname">DEBUG</code><em class="property"> = True</em><a class="headerlink" href="#project.server.config.config.TestingConfig.DEBUG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="project.server.config.config.TestingConfig.JWT_ACCESS_TOKEN_EXPIRES">
+<code class="sig-name descname">JWT_ACCESS_TOKEN_EXPIRES</code><em class="property"> = datetime.timedelta(seconds=5)</em><a class="headerlink" href="#project.server.config.config.TestingConfig.JWT_ACCESS_TOKEN_EXPIRES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="project.server.config.config.TestingConfig.PRESERVE_CONTEXT_ON_EXCEPTION">
+<code class="sig-name descname">PRESERVE_CONTEXT_ON_EXCEPTION</code><em class="property"> = False</em><a class="headerlink" href="#project.server.config.config.TestingConfig.PRESERVE_CONTEXT_ON_EXCEPTION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="project.server.config.config.TestingConfig.SQLALCHEMY_DATABASE_URI">
+<code class="sig-name descname">SQLALCHEMY_DATABASE_URI</code><em class="property"> = 'mysql+pymysql://macula:macula&#64;localhost/macula_test'</em><a class="headerlink" href="#project.server.config.config.TestingConfig.SQLALCHEMY_DATABASE_URI" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="project.server.config.config.TestingConfig.TESTING">
+<code class="sig-name descname">TESTING</code><em class="property"> = True</em><a class="headerlink" href="#project.server.config.config.TestingConfig.TESTING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-project.server.config.routes">
+<span id="project-server-config-routes-module"></span><h2>project.server.config.routes module<a class="headerlink" href="#module-project.server.config.routes" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-project.server.config">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-project.server.config" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">LIYO-DOC</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, LIYOKOV.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/mimi.project.server.config.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,47 @@
+[
+  {
+    "table": "ai_category",
+    "records": [
+      {
+        "id": 1,
+        "updated_on": "2020-01-01 00:00:00",
+        "category_name": "Scratch",
+        "value": 1,
+        "description":"Scratch",
+        "dataset": 1
+      },
+      {
+        "id": 2,
+        "updated_on": "2020-01-01 00:00:00",
+        "category_name": "Crack",
+        "value": 1,
+        "description":"Crack",
+        "dataset": 1
+      },
+      {
+        "id": 3,
+        "updated_on": "2020-01-01 00:00:00",
+        "category_name": "Broken-Leg",
+        "value": 1,
+        "description":"Broken-Leg",
+        "dataset": 1
+      },
+      {
+        "id": 4,
+        "updated_on": "2020-01-01 00:00:00",
+        "category_name": "Good",
+        "value": 1,
+        "description":"Good",
+        "dataset": 1
+      },
+      {
+        "id": 5,
+        "updated_on": "2020-01-01 00:00:00",
+        "category_name": "Combined",
+        "value": 1,
+        "description":"Combined",
+        "dataset": 1
+      }
+    ]
+  }
+]

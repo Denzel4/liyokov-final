@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project.tests package &#8212; LIYO-DOC 1.0.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="project-tests-package">
+<h1>project.tests package<a class="headerlink" href="#project-tests-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="project.tests.v1.html">project.tests.v1 package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="project.tests.v1.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project.tests.v1.html#module-project.tests.v1.test_auth">project.tests.v1.test_auth module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project.tests.v1.html#module-project.tests.v1">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-project.tests.base">
+<span id="project-tests-base-module"></span><h2>project.tests.base module<a class="headerlink" href="#module-project.tests.base" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="project.tests.base.BaseTestCase">
+<em class="property">class </em><code class="sig-prename descclassname">project.tests.base.</code><code class="sig-name descname">BaseTestCase</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">methodName</span><span class="o">=</span><span class="default_value">'runTest'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.tests.base.BaseTestCase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">flask_testing.utils.TestCase</span></code></p>
+<p>Base Tests</p>
+<dl class="py method">
+<dt id="project.tests.base.BaseTestCase.create_app">
+<code class="sig-name descname">create_app</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#project.tests.base.BaseTestCase.create_app" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create your Flask app here, with any
+configuration you need.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="project.tests.base.BaseTestCase.setUp">
+<code class="sig-name descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#project.tests.base.BaseTestCase.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="project.tests.base.BaseTestCase.tearDown">
+<code class="sig-name descname">tearDown</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#project.tests.base.BaseTestCase.tearDown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for deconstructing the test fixture after testing it.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-project.tests.helpers">
+<span id="project-tests-helpers-module"></span><h2>project.tests.helpers module<a class="headerlink" href="#module-project.tests.helpers" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="project.tests.helpers.authDict">
+<code class="sig-prename descclassname">project.tests.helpers.</code><code class="sig-name descname">authDict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">response</span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.tests.helpers.authDict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="project.tests.helpers.login_new_user">
+<code class="sig-prename descclassname">project.tests.helpers.</code><code class="sig-name descname">login_new_user</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">username</span><span class="o">=</span><span class="default_value">'joe'</span></em>, <em class="sig-param"><span class="n">email</span><span class="o">=</span><span class="default_value">'joe&#64;gmail.com'</span></em>, <em class="sig-param"><span class="n">password</span><span class="o">=</span><span class="default_value">'password'</span></em>, <em class="sig-param"><span class="n">first_name</span><span class="o">=</span><span class="default_value">'Joe'</span></em>, <em class="sig-param"><span class="n">last_name</span><span class="o">=</span><span class="default_value">'Test'</span></em>, <em class="sig-param"><span class="n">admin</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.tests.helpers.login_new_user" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="project.tests.helpers.login_user">
+<code class="sig-prename descclassname">project.tests.helpers.</code><code class="sig-name descname">login_user</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">username</span><span class="o">=</span><span class="default_value">'joe'</span></em>, <em class="sig-param"><span class="n">password</span><span class="o">=</span><span class="default_value">'password'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.tests.helpers.login_user" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="project.tests.helpers.logout_user">
+<code class="sig-prename descclassname">project.tests.helpers.</code><code class="sig-name descname">logout_user</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">response</span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.tests.helpers.logout_user" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="project.tests.helpers.register_user">
+<code class="sig-prename descclassname">project.tests.helpers.</code><code class="sig-name descname">register_user</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">username</span><span class="o">=</span><span class="default_value">'joe'</span></em>, <em class="sig-param"><span class="n">email</span><span class="o">=</span><span class="default_value">'joe&#64;gmail.com'</span></em>, <em class="sig-param"><span class="n">password</span><span class="o">=</span><span class="default_value">'password'</span></em>, <em class="sig-param"><span class="n">first_name</span><span class="o">=</span><span class="default_value">'Joe'</span></em>, <em class="sig-param"><span class="n">last_name</span><span class="o">=</span><span class="default_value">'Test'</span></em>, <em class="sig-param"><span class="n">admin</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.tests.helpers.register_user" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-project.tests.test__config">
+<span id="project-tests-test-config-module"></span><h2>project.tests.test__config module<a class="headerlink" href="#module-project.tests.test__config" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="project.tests.test__config.TestDevelopmentConfig">
+<em class="property">class </em><code class="sig-prename descclassname">project.tests.test__config.</code><code class="sig-name descname">TestDevelopmentConfig</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">methodName</span><span class="o">=</span><span class="default_value">'runTest'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.tests.test__config.TestDevelopmentConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">flask_testing.utils.TestCase</span></code></p>
+<dl class="py method">
+<dt id="project.tests.test__config.TestDevelopmentConfig.create_app">
+<code class="sig-name descname">create_app</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#project.tests.test__config.TestDevelopmentConfig.create_app" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create your Flask app here, with any
+configuration you need.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="project.tests.test__config.TestDevelopmentConfig.test_app_is_development">
+<code class="sig-name descname">test_app_is_development</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#project.tests.test__config.TestDevelopmentConfig.test_app_is_development" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="project.tests.test__config.TestProductionConfig">
+<em class="property">class </em><code class="sig-prename descclassname">project.tests.test__config.</code><code class="sig-name descname">TestProductionConfig</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">methodName</span><span class="o">=</span><span class="default_value">'runTest'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.tests.test__config.TestProductionConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">flask_testing.utils.TestCase</span></code></p>
+<dl class="py method">
+<dt id="project.tests.test__config.TestProductionConfig.create_app">
+<code class="sig-name descname">create_app</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#project.tests.test__config.TestProductionConfig.create_app" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create your Flask app here, with any
+configuration you need.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="project.tests.test__config.TestProductionConfig.test_app_is_production">
+<code class="sig-name descname">test_app_is_production</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#project.tests.test__config.TestProductionConfig.test_app_is_production" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="project.tests.test__config.TestTestingConfig">
+<em class="property">class </em><code class="sig-prename descclassname">project.tests.test__config.</code><code class="sig-name descname">TestTestingConfig</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">methodName</span><span class="o">=</span><span class="default_value">'runTest'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.tests.test__config.TestTestingConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">flask_testing.utils.TestCase</span></code></p>
+<dl class="py method">
+<dt id="project.tests.test__config.TestTestingConfig.create_app">
+<code class="sig-name descname">create_app</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#project.tests.test__config.TestTestingConfig.create_app" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create your Flask app here, with any
+configuration you need.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="project.tests.test__config.TestTestingConfig.test_app_is_testing">
+<code class="sig-name descname">test_app_is_testing</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#project.tests.test__config.TestTestingConfig.test_app_is_testing" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-project.tests">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-project.tests" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">LIYO-DOC</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, LIYOKOV.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/project.tests.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
